@@ -1,0 +1,160 @@
+﻿<h1 class="text-center my-5">Welcome to Fairfax County, Virginia!</h1>
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+
+        <!-- Youtube Video Embed https://getbootstrap.com/docs/4.1/utilities/embed/ -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/1vVkgse-P-E" allowfullscreen></iframe>
+        </div>
+        <figcaption class="figure-caption text-center">Welcome to Fairfax County, Virginia!</figcaption>
+        <!-- End of Video Embed -->
+
+    </div>
+</div>
+
+
+<section>
+    <div class="row mt-5">
+        <div class="col-md-8 text-justify">
+            <p>
+                Fairfax County, officially the County of Fairfax, is a predominantly suburban county — with urban and rural pockets — in the Commonwealth of Virginia in the United States.
+            </p>
+
+            <p>
+                As of the 2010 census, the population was 1,081,726,[1] in 2015, it was estimated at 1,142,234,[2] making it the Commonwealth's most populous jurisdiction, with 13.6% of Virginia's population. The county is also the most populous jurisdiction in the Washington-Arlington-Alexandria, DC-VA-MD-WV Metropolitan Statistical Area, with 19.8% of the MSA population, as well as the larger Washington-Baltimore-Arlington, DC-MD-VA-WV-PA Combined Statistical Area, with 13.1% of the CSA population. The county seat is the City of Fairfax, though because it is an independent city under Virginia law, the city of Fairfax is not part of Fairfax County.[3]
+            </p>
+
+            <p>
+                Fairfax was the first U.S. county to reach a six-figure median household income and has the second-highest median household income of any local jurisdiction in the United States after neighbor Loudoun County.[4][5]
+            </p>
+        </div>
+
+        <div class="col-md-4">
+
+            <!-- Figure with caption http://getbootstrap.com/docs/4.1/content/figures/ -->
+            <figure class="figure">
+                <img src="/images/fairfax_location.png" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption text-center">County Location</figcaption>
+            </figure>
+            <!-- End of Figure with caption -->
+            <!-- Carousel/Slides Auto-Sliding -->
+            <!-- https://getbootstrap.com/docs/4.1/components/carousel/ -->
+            <div class="carousel slide mt-3" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/images/city_of_fallschurch.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/city_of_fallschurch.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/city_of_alexandria.png" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <figcaption class="figure-caption text-center">City Views</figcaption>
+            <!-- End of Carousel/Slides Auto-Sliding -->
+
+        </div>
+    </div>
+</section>
+<hr class="section-split" />
+
+
+<section>
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/images/city_of_fairfax.png" alt="image of city of fairfax">
+        </div>
+
+        <div class="col-md-5">
+            <h3>City of Fairfax</h3>
+            <p>Fairfax, colloquially known as Fairfax Courthouse, Downtown Fairfax, or Fairfax City, and officially named the City of Fairfax, is an independent city in the Commonwealth of Virginia in the United States.[3] As of the 2010 census the population was 22,565,[4] which had risen to an estimated 24,013 as of 2015.[5]</p>
+            @Html.ActionLink("Read More", "FairfaxCity", null, new { @class = "btn btn-red" })
+        </div>
+    </div>
+    <hr class="my-4" />
+
+    <div class="row">
+        <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/images/city_of_fallschurch.png" alt="image of city of falls church">
+        </div>
+
+        <div class="col-md-5">
+            <h3>City of Falls Church</h3>
+            <p>
+                Falls Church is an independent city in the Commonwealth of Virginia.[1] As of the 2010 census, the population was 12,332.[2] The estimated population in 2015 was 13,892.[3] Falls Church is included in the Washington metropolitan area. Falls Church has the lowest level of poverty of any independent city or county in the United States.[4]
+            </p>
+            <button class="btn btn-red disabled">Read More</button>
+        </div>
+    </div>
+    <hr class="my-4" />
+
+
+    <div class="row">
+        <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/images/city_of_alexandria.png" alt="image of city of Alexandria">
+        </div>
+
+        <div class="col-md-5">
+            <h3>City of Alexandria</h3>
+            <p>
+                Alexandria is an independent city in the Commonwealth of Virginia in the United States. As of the 2010 census, the population was 139,966,[3] and in 2016, the population was estimated to be 155,810.[4] Located along the western bank of the Potomac River, Alexandria is approximately 7 miles (11 km) south of downtown Washington, D.C.
+            </p>
+            <button class="btn btn-red disabled">Read More</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Table -->
+<!-- http://getbootstrap.com/docs/4.1/content/tables/ -->
+<section>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>City</td>
+                <td>Established</td>
+                <td>Population</td>
+                <td>Area</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Fairfax</td>
+                <td>1961</td>
+                <td>21,498</td>
+                <td>6 sq mi</td>
+            </tr>
+            <tr>
+                <td>Falls Church</td>
+                <td>1948</td>
+                <td>12,332</td>
+                <td>2.1 sq mi</td>
+            </tr>
+            <tr>
+                <td>Alexandria</td>
+                <td>1902</td>
+                <td>147,391</td>
+                <td>15 sq mi</td>
+            </tr>
+            <tr>
+                <td>Other 1</td>
+                <td>1920</td>
+                <td>10,000</td>
+                <td>3 sq mi</td>
+            </tr>
+            <tr>
+                <td>Other 2</td>
+                <td>1922</td>
+                <td>12,000</td>
+                <td>4 sq mi</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- End of Table -->
